@@ -1,20 +1,20 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>ABS-KoSync-Bridge</Name>
-  <Repository>ghcr.io/cporcellijr/abs-kosync-bridge:latest</Repository>
+  <Name>BookBridge</Name>
+  <Repository>ghcr.io/cporcellijr/bookbridge:latest</Repository>
   <Registry/>
   <Network>host</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/196737-support-abs-kosync-bridge/</Support>
-  <Project>https://github.com/cporcellijr/abs-kosync-bridge</Project>
-  <ReadMe>https://github.com/cporcellijr/abs-kosync-bridge</ReadMe>
-  <Overview>ABS-KoSync Enhanced is a powerful, automated synchronization engine designed to unify your reading and listening experiences. It bridges the gap between audiobooks and ebooks, ensuring that whether you're listening on the go or reading on your e-reader, your progress is always perfectly aligned.</Overview>
+  <Project>https://github.com/cporcellijr/bookbridge</Project>
+  <ReadMe>https://cporcellijr.github.io/bookbridge/</ReadMe>
+  <Overview>BookBridge (formerly ABS-KoSync Bridge) is a powerful, automated synchronization engine designed to unify your reading and listening experiences. It bridges the gap between audiobooks and ebooks, ensuring that whether you're listening on the go or reading on your e-reader, your progress is always perfectly aligned.</Overview>
   <Category>Tools: MediaApp:Books Status:Beta</Category>
   <WebUI>http://[IP]:[PORT:5757]</WebUI>
   <TemplateURL/>
-  <Icon>https://github.com/cporcellijr/abs-kosync-bridge/blob/main/ABS-KOSync-Bridge.png?raw=true</Icon>
+  <Icon>https://raw.githubusercontent.com/cporcellijr/bookbridge/main/static/icon.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
@@ -22,7 +22,7 @@
   <DonateLink>https://buymeacoffee.com/acmepluto</DonateLink>
   <Requires/>
   <Config Name="Books" Target="/books" Default="" Mode="rw,slave" Description="Your EPUB library" Type="Path" Display="always" Required="true" Mask="false"/>
-  <Config Name="Config" Target="/data" Default="" Mode="rw,slave" Description="You config storage location" Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="Config" Target="/data" Default="" Mode="rw,slave" Description="Your config storage location" Type="Path" Display="always" Required="true" Mask="false"/>
   <Config Name="Web UI Port" Target="5757" Default="5757" Mode="tcp" Description="Container Port: 5757" Type="Port" Display="always-hide" Required="true" Mask="false">5757</Config>
   <TailscaleStateDir/>
 </Container>
